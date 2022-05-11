@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+/*
+    CIS 162
+    Project 3-1 
+   
+   Style Sheet for Resume/Portfolio Proj 3
+   Author: Alexandria Ramos
+   Date:   4/23/22
+   
+   Filename: rp_stylesheet.css
+
+*/
+
+/* Rest for Page Body*/
+address, article, aside, blockquote, body, cite,
+div, dl, dt, dd, em, figcaption, figure, footer,
+h1, h2, h3, h4, h5, h6, header, html, img,
+li, main, nav, ol, p, section, span, ul {
+ background: transparent;
+ margin: 0;
+ padding: 0;
+ vertical-align: baseline;
+ box-sizing: border-box;
+}
+
+
+body{
+    background-color: white;
+
+    
+  font-family: "Trirong", serif;
+
+    
+    line-height: 1.8em;
+    
+}
+
+
+
+
+
+
+
+/* Body Header Styles */
+
+
+
+
+/* Page Header Styles */
+body > header > img {
+   display: block;
+   width: 100%;
+    
+}
+
+body > header > li{
+    width: 20%
+}
+
+header h1 {margin-bottom:0;
+text-align: center;
+background-color: silver}
+
+h1 {color:gray}
+
+
+
+/*to fill the color in nav*/
+
+nav li {
+    display: block;
+    float: left;
+    
+}
+
+nav a {
+ text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: silver;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    text-align: center;
+      
+}
+
+nav a:hover,
+nav a:active{
+    background-color: gold
+}
+
+/*Links*/
+
+a:link,
+a:visited{
+    color: navy
+}
+
+/*To space out menu by 20 percent*/
+body > header > nav.horizontalNavigation li {
+   width: 25%;
+}
+
+
+/* Horizontal Navigation List Styles */
+
+nav.horizontalNavigation > ul > li {
+   display: block;
+   float: left;
+}
+
+/*Displays link as box*/
+
+nav.horizontalNavigation a {
+   display: block;
+   font-family: bold;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}  
+
+
+/* Forms Layout Styles section */
+
+
+form#survey {
+ display: flex;
+ flex-flow: row wrap;
+}
+
+
+form#survey > fieldset {
+ background-color: tan;
+ border-radius: 20px;
+ flex: 1 1 300px;
+ font-size: 0.85em;
+ padding: 10px;
+ margin: 10px;
+}
+
+
+div.formRow {
+ display: flex;
+ flex-flow: row wrap;
+ margin: 7px 0px;
+}
+
+div.formRow > * {
+ flex: 1 1 150px;
+}
+
+
+
+
+
+
+/* Legend Styles */
+
+
+legend {
+ background-color: teal;
+ color: white;
+ padding: 5px;
+}
+
+
+
+
+
+/* Text Area Styles */
+
+
+textarea {
+ margin-top: 10px;
+ height: 100px;
+ width: 95%;
+}
+
+
+.text-primary{
+    
+ color:black
+}
+
+
+/* Form Button Styles */
+
+
+div#buttons {
+ text-align: center;
+ width: 100%;
+}
+
+
+input[type='submit'], input[type='reset'] {
+ font-size: 1.2em;
+ padding: 5px;
+ margin: 15px;
+}
+
+
+
+
+
+/* Validation Styles */
+
+
+input:focus, select:focus, textarea:focus {
+ background-color: azure;
+}
+
+/* display a light green background and a green
+check mark image when valid data is entered in the custName, custZip,
+custPhone, and custEmail fields:*/
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid {
+ background-color: lawngreen
+}
+
+
+/*o display a light red background and a red X
+image when invalid data is entered in those same fields:
+*/
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid {
+ background-color: lightcoral
+}
+
+
+
+
+/*Gallery Styles*/
+
+        
+  div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
